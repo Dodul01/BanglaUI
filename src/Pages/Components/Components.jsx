@@ -1,9 +1,15 @@
-import GradientText from "../../Components/GradientText/GradientText"
+import { Outlet } from "react-router-dom"
+import SideNav from "../../Components/SideNav/SideNav"
 
 const Components = () => {
     return (
-        <div className="min-h-screen">
-            <GradientText text='Components' />
+        <div className="min-h-screen flex">
+            <div className="w-[300px]">
+                <SideNav />
+            </div>
+            <div className="flex-1">
+                <Outlet />
+            </div>
         </div>
     )
 }

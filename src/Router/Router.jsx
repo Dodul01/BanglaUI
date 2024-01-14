@@ -4,6 +4,8 @@ import App from "../App";
 import QuickStart from "../Pages/QuickStart/QuickStart";
 import Error from "../Pages/Error/Error";
 import Components from "../Pages/Components/Components";
+import NavComponent from "../Components/NavComponent/NavComponent";
+import HeroComponent from "../Components/HeroComponent/HeroComponent";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +23,17 @@ const router = createBrowserRouter([
             },
             {
                 path: '/components',
-                element: <Components />
+                element: <Components />,
+                children: [
+                    {
+                        path: '/components/nav',
+                        element: <NavComponent />
+                    },
+                    {
+                        path: '/components/hero',
+                        element: <HeroComponent />
+                    }
+                ]
             }
         ]
     }
