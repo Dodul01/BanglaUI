@@ -1,9 +1,9 @@
-import GradientText from "../../Components/GradientText/GradientText"
+import Banner from "../../Components/Banner/Banner"
 
 const Home = () => {
     return (
         <div>
-            <GradientText text={'Home'}/>
+            <Banner />
         </div>
     )
 }
