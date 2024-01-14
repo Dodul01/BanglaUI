@@ -2,7 +2,7 @@ import GradientText from "../../Components/GradientText/GradientText"
 
 const Components = () => {
     return (
-        <div>
+        <div className="min-h-screen">
             <GradientText text='Components' />
         </div>
     )

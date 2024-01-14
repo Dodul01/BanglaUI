@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import Nav from "./Components/Nav/Nav"
 import Footer from "./Components/Footer/Footer"
 import './App.css'
+import { Toaster } from "react-hot-toast"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Nav />
         <Outlet />
         <Footer />
+        <Toaster />
       </div>
     </div>
   )
