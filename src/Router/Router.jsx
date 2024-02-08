@@ -26,7 +26,7 @@ const router = createBrowserRouter([
                 element: <Components />,
                 children: [
                     {
-                        path: '/components/nav',
+                        path: '/components',
                         element: <NavComponent />
                     },
                     {
